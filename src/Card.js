@@ -11,8 +11,8 @@ const HIDDEN_SYMBOL = '❓'
  * @param {type} feedback status of the card
  * @returns {String} rendering of the component
  */
-const Card = ( { card, feedback } ) => (
-	<div className={`card ${feedback}`}>
+const Card = ( { card, feedback, onClick } ) => (
+	<div className={`card ${feedback}`} onClick = { () => onClick(card) }>
 		<span className="symbol">
 			{ feedback === 'hidden' ? HIDDEN_SYMBOL : card }
 		</span>

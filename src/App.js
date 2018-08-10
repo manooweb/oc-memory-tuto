@@ -24,7 +24,8 @@ class App extends Component {
 		return shuffle(result)
 	}
 
-	handleCardClick = (card) => {
+	// Fix this binding by method assigning
+	handleCardClick = card => {
 		console.log(card, 'clicked', this)
 	}
 	render() {

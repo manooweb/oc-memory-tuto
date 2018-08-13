@@ -5,7 +5,7 @@ import './App.css';
 
 import Card from './Card';
 import GuessCount from './GuessCount';
-import HallOfFame, { FAKE_HOF } from './HallOfFame';
+import HallOfFame from './HallOfFame';
 import HighScoreInput from './HighScoreInput';
 
 const SIDE = 6;
